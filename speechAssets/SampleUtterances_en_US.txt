@@ -2,3 +2,30 @@ GetNewFactIntent a fact
 GetNewFactIntent tell me a fact
 GetNewFactIntent give me a fact
 GetNewFactIntent give me something
+GetNewFactIntent tell me an AI fact
+GetNewFactIntent tell me an AI tidbit
+GetNewFactIntent give me an AI tidbit
+GetNewFactIntent say something about AI
+GetNewFactIntent give me AI trivia
+GetNewFactIntent give me some AI trivia
+GetNewFactIntent give me an AI trivia
+GetNewFactIntent say something
+GetNewFactIntent say something about AI
+GetNewFactIntent say something AI related
+GetNewFactIntent say something towards AI
+
+GetNewYearFactIntent potatoes {FACT_YEAR}
+GetNewYearFactIntent what happened on this year {FACT_YEAR}
+GetNewYearFactIntent what happened in this year {FACT_YEAR}
+GetNewYearFactIntent on this year {FACT_YEAR}
+GetNewYearFactIntent in the year {FACT_YEAR}
+GetNewYearFactIntent tell me about the date {FACT_YEAR}
+GetNewYearFactIntent tell me about the year {FACT_YEAR}
+GetNewYearFactIntent yearly fact for {FACT_YEAR}
+GetNewYearFactIntent year fact for {FACT_YEAR}
+GetNewYearFactIntent yearly factoid for {FACT_YEAR}
+GetNewYearFactIntent year factoid for {FACT_YEAR}
+GetNewYearFactIntent fact for the year {FACT_YEAR}
+GetNewYearFactIntent fact for year {FACT_YEAR}
+GetNewYearFactIntent factoid for year {FACT_YEAR}
+GetNewYearFactIntent factoid for the year {FACT_YEAR}

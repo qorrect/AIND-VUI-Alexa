@@ -1,16 +1,30 @@
 {
   "intents": [
     {
-      "intent": "GetNewFactIntent"
+      "intent": "GetNewFactIntent",
+      "samples": []
     },
     {
-      "intent": "AMAZON.HelpIntent"
+      "intent": "GetNewYearFactIntent",
+      "slots": [
+        {
+          "name": "FACT_YEAR",
+          "type": "AMAZON.FOUR_DIGIT_NUMBER"
+        }
+      ],
+      "samples": []
     },
     {
-      "intent": "AMAZON.StopIntent"
+      "intent": "AMAZON.HelpIntent",
+      "samples": []
     },
     {
-      "intent": "AMAZON.CancelIntent"
+      "intent": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "intent": "AMAZON.CancelIntent",
+      "samples": []
     }
   ]
 }
