@@ -25,9 +25,9 @@ var languageStrings = {
             "FACTS_MAP" : facts.FACTS_BY_YEAR,
             "SKILL_NAME": "My History Facts",  // OPTIONAL change this to a more descriptive name
             "GET_FACT_MESSAGE": GET_FACT_MSG_EN,
-            "HELP_MESSAGE": "You can say tell me a fact, tell me a year fact, or, you can say exit... What can I help you with?",
+            "HELP_MESSAGE": "You can say tell me a fact or cancel ... What can I help you with?",
             "HELP_REPROMPT": "What can I help you with?",
-            "STOP_MESSAGE": "Goodbye!"
+            "STOP_MESSAGE": "Goodbye - I love you!"
         }
     }
 };
@@ -87,20 +87,23 @@ var handlers = {
 
         var factMap = this.t('FACTS_MAP');
         var speechOutput = ""
-        var year = this.event.request.intent.slots.FACT_YEAR
+        var year = this.event.request.intent.slots.FACT_YEAR.value
         var reprompt = this.t("HELP_MESSAGE");
 
-        if (year in Object.keys(factMap)) {
-            speechOutput = "Your fact for the year " + year + " is : " + factMap[year]
+
+        var fact = factMap[year]
+        if (fact) {
+            speechOutput = "In the year " + year + " : " + fact
         }
         else {
             var factArr = this.t('FACTS');
-            var randomFact = randomPhrase(factArr);
+            fact = randomPhrase(factArr);
 
             // Create speech output
-            speechOutput = "I didn't find anything for " + year.value  + " but here is a random fact : " + randomFact;
+            speechOutput = "I didn't find anything for " + year  + " but here is a random fact : " + fact;
         }
-        this.emit(':askWithCard', speechOutput, reprompt, this.t("SKILL_NAME"), randomFact)
+
+        this.emit(':askWithCard', speechOutput, reprompt, this.t("SKILL_NAME"), fact)
     },
     'AMAZON.HelpIntent': function () {
         var speechOutput = this.t("HELP_MESSAGE");

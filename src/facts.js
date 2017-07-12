@@ -11,7 +11,10 @@ module.exports = {
         "Alan Turing proposes the Turing Test as a measure of machine intelligence in 1951",
         "The General Problem Solver (GPS) demonstrated by Newell, Shaw and Simon while at CMU in 1957.",
         "John McCarthy (Massachusetts Institute of Technology or MIT) invented the Lisp programming language in 1958.",
-        "John McCarthy and Marvin Minsky founded the MIT AI Lab in 1959."
+        "John McCarthy and Marvin Minsky founded the MIT AI Lab in 1959.",
+        "Ray Solomonoff lays the foundations of a mathematical theory of AI, introducing universal Bayesian methods for inductive inference and prediction in 1960.",
+        "James Slagle (PhD dissertation, MIT) wrote (in Lisp) the first symbolic integration program, SAINT, which solved calculus problems at the college freshman level in 1961.",
+        "Leonard Uhr and Charles Vossler published 'A Pattern Recognition Program That Generates, Evaluates, and Adjusts Its Own Operators', which described one of the first machine learning programs that could adaptively acquire and modify features and thereby overcome the limitations of simple perceptrons of Rosenblatt in 1963.",
     ],
     "FACTS_BY_YEAR" : {
         "1950" :  "The field of AI is considered to have its origin in 1950, with publication of British mathematician Alan Turing's paper, Computing Machinery and Intelligence.",
@@ -23,8 +26,9 @@ module.exports = {
         "1941" : "In 1941, Konrad Zuse built the first working program-controlled computers.",
         "1957" : "	The General Problem Solver (GPS) demonstrated by Newell, Shaw and Simon while at CMU.",
         "1958" : "John McCarthy (Massachusetts Institute of Technology or MIT) invented the Lisp programming language.",
-        "1959" : "John McCarthy and Marvin Minsky founded the MIT AI Lab."
-
-
+        "1959" : "John McCarthy and Marvin Minsky founded the MIT AI Lab.",
+        "1960" : "Ray Solomonoff lays the foundations of a mathematical theory of AI, introducing universal Bayesian methods for inductive inference and prediction.",
+        "1961"	: "James Slagle (PhD dissertation, MIT) wrote (in Lisp) the first symbolic integration program, SAINT, which solved calculus problems at the college freshman level",
+        "1963"	: "Leonard Uhr and Charles Vossler published 'A Pattern Recognition Program That Generates, Evaluates, and Adjusts Its Own Operators', which described one of the first machine learning programs that could adaptively acquire and modify features and thereby overcome the limitations of simple perceptrons of Rosenblatt",
     }
 }
